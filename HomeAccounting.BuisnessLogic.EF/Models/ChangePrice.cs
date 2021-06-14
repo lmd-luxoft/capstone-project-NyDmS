@@ -4,7 +4,7 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Ef
+namespace HomeAccounting.BuisnessLogic.EF
 {
     [Table("ChangePrice")]
     public class ChangePrice

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ef
+namespace HomeAccounting.BuisnessLogic.EF
 {
     /// <summary>
     /// Действия с депозитом
