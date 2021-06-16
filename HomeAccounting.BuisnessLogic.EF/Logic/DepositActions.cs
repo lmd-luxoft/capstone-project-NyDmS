@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace HomeAccounting.BuisnessLogic.EF
 {
@@ -10,6 +13,27 @@ namespace HomeAccounting.BuisnessLogic.EF
     /// </summary>
     public class DepositActions: IDepositActions
     {
+        private void sendMsg(string msg)
+        {
+
+            MailAddress from = new MailAddress("mail@mail.ru", "Some");
+
+            MailAddress to = new MailAddress("mail@mail.ru");
+
+            MailMessage m = new MailMessage(from, to);
+
+            m.Subject = "Тест";
+
+            m.Body = "<h2>Письмо-тест работы smtp-клиента</h2>";
+
+            SmtpClient smtp = new SmtpClient("mail@mail.ru", 587);
+
+            smtp.EnableSsl = true;
+            smtp.Credentials = new NetworkCredential("mail@mail.ru", "password");
+
+            smtp.Send(m);
+        }
+
         /// <summary>
         ///  Добавим
         /// </summary>
@@ -28,6 +52,9 @@ namespace HomeAccounting.BuisnessLogic.EF
 
                 db.SaveChanges();
             }
+
+            Task sendMsgTask = new Task(() => sendMsg("Текст сообщения"));
+            sendMsgTask.Start();
         }
         /// <summary>
         /// Редактируем

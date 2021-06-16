@@ -11,5 +11,7 @@ namespace HomeAccounting.BuisnessLogic.EF
         public int Number { get; set; }
         public int Procent { get; set; }
         public string ProcentType { get; set; }
+
+        public IEnumerable<Bank> banks { get; set; }
     }
 }

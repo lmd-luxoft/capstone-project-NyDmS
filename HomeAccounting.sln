@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeAccounting.UI", "HomeAc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeAccounting.Console", "HomeAccounting.Console\HomeAccounting.Console.csproj", "{D8CF7262-32C4-4F25-BE0B-C7EB00DC208C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAccounting.BuisnessLogic.EF", "HomeAccounting.BuisnessLogic.EF\HomeAccounting.BuisnessLogic.EF.csproj", "{4FB6371C-5BF9-4F12-9AFB-209A78FB72D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeAccounting.BuisnessLogic.EF", "HomeAccounting.BuisnessLogic.EF\HomeAccounting.BuisnessLogic.EF.csproj", "{4FB6371C-5BF9-4F12-9AFB-209A78FB72D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QEquation", "QEquation\QEquation.csproj", "{E1AA339B-F7AF-4171-B5D2-9E6F60F5353C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{4FB6371C-5BF9-4F12-9AFB-209A78FB72D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FB6371C-5BF9-4F12-9AFB-209A78FB72D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FB6371C-5BF9-4F12-9AFB-209A78FB72D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1AA339B-F7AF-4171-B5D2-9E6F60F5353C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1AA339B-F7AF-4171-B5D2-9E6F60F5353C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1AA339B-F7AF-4171-B5D2-9E6F60F5353C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1AA339B-F7AF-4171-B5D2-9E6F60F5353C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
